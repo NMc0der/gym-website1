@@ -1,0 +1,19 @@
+$color-primary: blue;
+
+.title {
+  color: $color-primary;
+}
+
+.navbar {
+  border: black 3px solid;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navLinks {
+    a {
+      margin: 15px;
+    }
+  }
+}
