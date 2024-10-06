@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Logo from "./logo";
 
 const Nav = () => {
   return (
     <div className="navbar">
-      <div>Logo</div>
+      <Logo />
       <div className="navLinks">
         <Link href="/">Home</Link>
         <Link href="/">About</Link>

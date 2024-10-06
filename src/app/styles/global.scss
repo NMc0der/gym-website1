@@ -23,3 +23,27 @@ $color-primary: blue;
 
   height: 30rem;
 }
+
+.logo-container {
+  min-width: fit-content;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+
+  .logo-main-text {
+    color: red;
+    font-weight: 600;
+    // font-weight: 800;
+    font-size: 1.75rem;
+    span {
+      // font-weight: 400;
+    }
+  }
+  .logo-sub-text {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+}
