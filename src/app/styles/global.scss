@@ -1,5 +1,14 @@
 @import "./breakpoint";
 
+$primary-color: red;
+$secondary-color: lightblue;
+
+@mixin hovTrasition {
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  color: red;
+}
+
 $color-primary: blue;
 
 .title {
@@ -19,11 +28,15 @@ $color-primary: blue;
   .navLinks {
     display: none;
 
-    @include lg {
+    @include xl {
       display: block;
     }
     a {
       margin: 15px;
+    }
+
+    a:hover {
+      @include hovTrasition();
     }
   }
 }
@@ -44,12 +57,12 @@ $color-primary: blue;
   margin: 15px;
 
   .logo-main-text {
-    color: red;
+    color: $primary-color;
     font-weight: 600;
     // font-weight: 800;
     font-size: 1.75rem;
     span {
-      color: lightblue;
+      color: $secondary-color;
       // font-weight: 400;
     }
   }
@@ -69,54 +82,38 @@ $color-primary: blue;
   }
 
   div > *:hover {
-    transition: 0.25s ease-in-out;
-    cursor: pointer;
-    color: red;
+    @include hovTrasition();
   }
 
   .hamburger-menu {
-    @include lg {
+    @include xl {
       display: none;
     }
   }
 
   .join-btn {
+    display: none;
     font-weight: 600;
     border: 2px solid white;
     border-radius: 5px;
     padding: 0.75rem;
     color: white;
-    background: -webkit-linear-gradient(0deg, transparent 50%, lightblue 50%);
+    background: -webkit-linear-gradient(
+      0deg,
+      transparent 50%,
+      $secondary-color 50%
+    );
     background-size: 400px 80px;
     transition: 0.8s;
+    @include sm {
+      display: block;
+    }
   }
 
   .join-btn:hover {
     background-position: 200px 0px;
 
-    color: red;
+    color: $primary-color;
     cursor: pointer;
   }
 }
-
-// .join-btn::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1;
-//   background-color: lightblue;
-//   transition: 0.4s all ease-in-out 0s;
-// }
-
-// .join-btn::before {
-//   height: 0;
-// }
-
-// .join-btn:hover::before {
-//   top: unset;
-//   bottom: 0;
-//   height: 100%;
-// }
