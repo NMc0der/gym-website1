@@ -7,13 +7,21 @@ $color-primary: blue;
 }
 
 .navbar {
+  // background-color: black;
+  // color: white;
   border: black 3px solid;
+  padding: 0px 15px;
   // height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   .navLinks {
+    display: none;
+
+    @include lg {
+      display: block;
+    }
     a {
       margin: 15px;
     }
@@ -48,5 +56,27 @@ $color-primary: blue;
   .logo-sub-text {
     font-size: 0.75rem;
     letter-spacing: 2px;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  div > * {
+    font-size: 1.75rem;
+  }
+
+  div > *:hover {
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    color: red;
+  }
+
+  .hamburger-menu {
+    @include lg {
+      display: none;
+    }
   }
 }

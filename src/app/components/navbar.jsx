@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Logo from "./logo";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { FiSidebar } from "react-icons/fi";
+import { IoPersonOutline } from "react-icons/io5";
+import JoinClassBtn from "./joinClassBtn";
 // const [menu, setMenu] = useState(true);
 
 //   useEffect(() => {
@@ -27,11 +29,17 @@ const Nav = () => {
         <Link href="/">Classes</Link>
         <Link href="/">Contact</Link>
       </div>
-      <div>
+      <div className="nav-icons">
         <div className="hamburger-menu">
           <GiHamburgerMenu />
         </div>
-        navbuttons
+        <div className="sign-in-icon">
+          <IoPersonOutline />
+        </div>
+        <div className="sidebar-icon">
+          <FiSidebar />
+        </div>
+        <JoinClassBtn />
       </div>
     </div>
   );
