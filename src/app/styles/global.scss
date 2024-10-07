@@ -1,3 +1,5 @@
+@import "./breakpoint";
+
 $color-primary: blue;
 
 .title {
@@ -6,7 +8,7 @@ $color-primary: blue;
 
 .navbar {
   border: black 3px solid;
-  height: 5rem;
+  // height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,6 +41,7 @@ $color-primary: blue;
     // font-weight: 800;
     font-size: 1.75rem;
     span {
+      color: lightblue;
       // font-weight: 400;
     }
   }
