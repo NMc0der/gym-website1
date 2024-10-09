@@ -122,6 +122,11 @@ $color-primary: blue;
   }
 }
 
+.nav-menu-hidden {
+  z-index: -1;
+  position: absolute;
+}
+
 .nav-menu {
   position: fixed;
   position: 0;
@@ -129,8 +134,8 @@ $color-primary: blue;
   right: 0;
   height: 100vh;
   width: 100%;
-  // z-index: 50;
-  z-index: -1;
+  z-index: 50;
+  // z-index: -1;
   background: rgba($color: grey, $alpha: 0.4);
   backdrop-filter: blur(8px);
   display: flex;

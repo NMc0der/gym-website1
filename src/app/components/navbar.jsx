@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Logo from "./logo";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -5,18 +7,21 @@ import { FiSidebar } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
 import JoinClassBtn from "./joinClassBtn";
 import { IoMdClose } from "react-icons/io";
-// const [menu, setMenu] = useState(true);
-
-//   useEffect(() => {
-//     const x = window.matchMedia("(max-width: 640px)");
-//     function showSidebar() {
-//       setMenu(true);
-//     }
-//     x.addListener(showSidebar);
-//     return () => x.removeListener(showSidebar);
-//   }, []);
+import { useEffect, React, useState } from "react";
+// import { useState } from "react";
 
 const Nav = () => {
+  const [menu, setMenu] = useState(false);
+
+  useEffect(() => {
+    const x = window.matchMedia("(max-width: 1200px)");
+    function showSidebar() {
+      setMenu(false);
+    }
+    x.addListener(showSidebar);
+    return () => x.removeListener(showSidebar);
+  }, []);
+
   return (
     <div className="navbar">
       <Logo />
@@ -31,7 +36,12 @@ const Nav = () => {
         <Link href="/">Contact</Link>
       </div>
       <div className="nav-icons">
-        <div className="hamburger-menu">
+        <div
+          onClick={() => {
+            setMenu(true);
+          }}
+          className="hamburger-menu"
+        >
           <GiHamburgerMenu />
         </div>
         <div className="sign-in-icon">
@@ -42,8 +52,13 @@ const Nav = () => {
         </div>
         <JoinClassBtn />
       </div>
-      <div className="nav-menu">
-        <div className="nav-menu-close">
+      <div className={menu ? "nav-menu" : "nav-menu-hidden"}>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+          className="nav-menu-close"
+        >
           <IoMdClose />
         </div>
         <div>
@@ -76,3 +91,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
+// className="nav-menu"
