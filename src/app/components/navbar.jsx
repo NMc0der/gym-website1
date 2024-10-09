@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FiSidebar } from "react-icons/fi";
 import { IoPersonOutline } from "react-icons/io5";
 import JoinClassBtn from "./joinClassBtn";
+import { IoMdClose } from "react-icons/io";
 // const [menu, setMenu] = useState(true);
 
 //   useEffect(() => {
@@ -21,7 +22,7 @@ const Nav = () => {
       <Logo />
       <div className="navLinks">
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
+        <Link href="about">About</Link>
         <Link href="/">Gallery</Link>
         <Link href="/">Schedule</Link>
         <Link href="/">Blog</Link>
@@ -40,6 +41,35 @@ const Nav = () => {
           <FiSidebar />
         </div>
         <JoinClassBtn />
+      </div>
+      <div className="nav-menu">
+        <div className="nav-menu-close">
+          <IoMdClose />
+        </div>
+        <div>
+          <Link href="/">Home</Link>
+        </div>
+        <div>
+          <Link href="/">About</Link>
+        </div>
+        <div>
+          <Link href="/">Schedule</Link>
+        </div>
+        <div>
+          <Link href="/">Gallery</Link>
+        </div>
+        <div>
+          <Link href="/">Blog</Link>
+        </div>
+        <div>
+          <Link href="/">Contact</Link>
+        </div>
+        <div>
+          <Link href="/">Pricing</Link>
+        </div>
+        <div>
+          <Link href="/">Classes</Link>
+        </div>
       </div>
     </div>
   );
