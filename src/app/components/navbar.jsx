@@ -14,7 +14,7 @@ const Nav = () => {
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
-    const x = window.matchMedia("(max-width: 1200px)");
+    const x = window.matchMedia("(max-width: 1400px)");
     function showSidebar() {
       setMenu(false);
     }
