@@ -47,8 +47,90 @@ $color-primary: blue;
 
 .footer-section {
   border: black 3px solid;
-
+  display: flex;
+  // flex-direction: column;
+  display: grid;
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem;
+  }
+  grid-template-columns: repeat(1, 1fr);
   height: 30rem;
+  text-align: center;
+
+  .motivation {
+    font-size: 1.1rem;
+  }
+
+  .footer-classes {
+    p {
+      margin: 1.5rem;
+      // text-align: start;
+      font-weight: 600;
+    }
+    p:hover {
+      @include hovTrasition();
+    }
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .footer-hours {
+    // h2::after {
+    //   border: 2px solid black;
+    //   width: 20px;
+    //   height: 20px;
+    // }
+    h3 {
+      font-weight: 600;
+      margin: 1.5rem;
+    }
+  }
+
+  .social-media-links {
+    margin: 1rem;
+
+    // @include md {
+    //   display: flex;
+    // }
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    div {
+      // border: 2px solid black;
+      margin: 1rem;
+      padding: 0.6rem;
+      border-radius: 20px;
+      font-size: 1.3rem;
+      background-color: #eeedeb;
+    }
+
+    div:hover {
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      transition: 0.25s ease-in-out;
+    }
+  }
+
+  div {
+    margin: 1rem;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  .logo-container {
+    margin-top: 0;
+  }
 }
 
 .logo-container {
