@@ -280,4 +280,22 @@ $color-primary: blue;
   font-size: 20rem;
 }
 
-// flex flex-col  items-center gap-12 [&>div]:text-3xl
+.pages-hero-section {
+  border: 3px solid orange;
+  width: 100%;
+  height: 30rem;
+  h2 {
+    position: absolute;
+    color: white;
+    margin: 5rem;
+    z-index: 2;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    z-index: -1;
+    // position: relative;
+  }
+}
