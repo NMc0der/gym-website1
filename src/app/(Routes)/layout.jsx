@@ -1,4 +1,4 @@
-import "../styles/global.scss";
+// import "../styles/global.scss";
 import heroImg from "../assets/scott-webb-Vn39uEkX00s-unsplash.jpg";
 import heroImg2 from "../assets/sven-mieke-optBC2FxCfc-unsplash.jpg";
 import Image from "next/image";

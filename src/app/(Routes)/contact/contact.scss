@@ -1,0 +1,85 @@
+.hi {
+  color: yellow;
+}
+
+.contact-section {
+  height: 60vh;
+  width: 90%;
+  //   display: block;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  //   padding: 2rem;
+}
+
+.info-section {
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .motivation {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .buisness-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 1rem;
+      text-decoration: underline Red;
+      text-underline-position: under;
+      text-decoration-thickness: 6px;
+    }
+
+    .hours > h3,
+    .social > h3 {
+      text-decoration: underline lightblue;
+      text-underline-position: under;
+      text-decoration-thickness: 6px;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.social-media-links {
+  margin: 1rem;
+
+  // @include md {
+  //   display: flex;
+  // }
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  div {
+    // border: 2px solid black;
+    margin: 1rem;
+    padding: 0.6rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    background-color: #eeedeb;
+  }
+  div:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 0.25s ease-in-out;
+  }
+}

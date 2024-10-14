@@ -1,4 +1,4 @@
-// import "./about.scss";
+import "./about.scss";
 
 const About = () => {
   return <div className="hi">hi</div>;

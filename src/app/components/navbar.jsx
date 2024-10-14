@@ -33,7 +33,7 @@ const Nav = () => {
         <Link href="/">Blog</Link>
         <Link href="/">Pricing</Link>
         <Link href="/">Classes</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/contact">Contact</Link>
       </div>
       <div className="nav-icons">
         <div
