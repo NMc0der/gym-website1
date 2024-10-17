@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import "./styles/global.scss";
+// import "./styles/breakpoint.scss";
 import Nav from "./components/navbar";
 import Footer from "./components/footer";
 

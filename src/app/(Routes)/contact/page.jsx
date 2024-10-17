@@ -1,4 +1,6 @@
 import "./contact.scss";
+// import ".../contact.scss";
+// import ".../styles/breakpoint.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa";
@@ -8,7 +10,7 @@ const Contact = () => {
   return (
     <div className="contact-section">
       <div className="info-section">
-        <h2>We are here to train you! To Shape your body.</h2>
+        <h2>We are here to train you! To shape your body.</h2>
         <p className="motivation">
           At Fit Zone, we are dedicated to helping you achieve the body of your
           dreams. Our Expert personal trainers and instructors will help you
@@ -50,11 +52,27 @@ const Contact = () => {
         </div>
       </div>
       <div className="form-section">
+        <h2>Leave Us Your Info</h2>
         <form action="">
-          <h2>Leave Us Your Info</h2>
           <input type="text" placeholder="Full Name*" name="" id="" />
           <input type="email" placeholder="Email Address*" />
-          <button>SUBMTI NOW</button>
+          <select name="class-choice" id="class-choice">
+            <option value="select">Select Class</option>
+            <option value="bodyBuilding">Body Building</option>
+            <option value="boxing">Boxing</option>
+            <option value="running">Running</option>
+            <option value="yoga">Yoga</option>
+            <option value="cardio">Cardio</option>
+            <option value="pilates">Pilates</option>
+          </select>
+          <textarea
+            rows={5}
+            cols={33}
+            placeholder="Comment"
+            name=""
+            id=""
+          ></textarea>
+          <button>SUBMIT NOW</button>
         </form>
       </div>
     </div>

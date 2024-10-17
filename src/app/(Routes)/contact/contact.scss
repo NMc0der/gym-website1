@@ -1,14 +1,31 @@
+// @import "/globals.css";
+// @import "../styles/global.scss";
+@import "../../styles/breakpoint";
+// @import "/breakpoint";
+
 .hi {
   color: yellow;
 }
 
 .contact-section {
-  height: 60vh;
+  // height: 60vh;
   width: 90%;
+  // content: fit;
   //   display: block;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include xl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include xxl {
+    width: 70%;
+    gap: 3rem;
+  }
+  // display: grid;
+  // grid-template-columns: repeat(1, 1fr);
+  // here
+  gap: 1rem;
 
   //   padding: 2rem;
 }
@@ -22,14 +39,18 @@
   }
   .motivation {
     font-size: 1.4rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   .buisness-info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -54,6 +75,14 @@
       font-size: 1.4rem;
     }
   }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .social-media-links {
@@ -81,5 +110,40 @@
     background-color: red;
     color: white;
     transition: 0.25s ease-in-out;
+  }
+}
+
+.form-section {
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    select,
+    textarea {
+      border: 1px solid lightgray;
+      margin: 1rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    button {
+      // border: 1px solid black;
+      height: 4rem;
+      width: 13rem;
+      align-self: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: white;
+      background-color: red;
+      margin: 1rem;
+      border-radius: 1rem;
+    }
   }
 }
