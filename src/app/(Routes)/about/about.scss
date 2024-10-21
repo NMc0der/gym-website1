@@ -1,3 +1,23 @@
-.hi {
-  color: blue;
+@import "../../styles/breakpoint";
+@import "../../styles/global";
+
+.ceo-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  background-image: linear-gradient($primary-color, $secondary-color);
+  margin-top: 15rem;
+  // border: 10px solid linear-gradient(red, lightblue);
+  // background: red;
+  border-radius: 50%;
+  // padding: 10px;
+
+  .ceo-image {
+    border-radius: 50%;
+    width: 24rem;
+    height: 24rem;
+    border: 5px solid white;
+  }
 }
