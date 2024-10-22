@@ -1,4 +1,12 @@
-import { Nunito, Roboto, Playfair_Display, Kanit } from "next/font/google";
+import {
+  Nunito,
+  Roboto,
+  Playfair_Display,
+  Kanit,
+  Bebas_Neue,
+  Caveat,
+  Comfortaa,
+} from "next/font/google";
 
 export const nunito = Nunito({
   weight: "800",
@@ -25,4 +33,25 @@ export const kanit = Kanit({
   weight: ["400", "600"],
   display: "swap",
   variable: "--kanit",
+});
+
+export const bebas_neue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--bebas",
+});
+
+export const caveat = Caveat({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--caveat",
+});
+
+export const comfortaa = Comfortaa({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--comfortaa",
 });

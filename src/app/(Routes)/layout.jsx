@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <h2>About</h2>
         <Image className="hero-img" src={heroImg2} alt="" />
       </div>
-      {children};
+      {children}
     </>
   );
 };

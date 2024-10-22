@@ -1,6 +1,14 @@
 @import "../../styles/breakpoint";
 @import "../../styles/global";
 
+.ceo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10rem;
+
+  justify-items: center;
+}
+
 .ceo-image-container {
   display: flex;
   justify-content: center;
@@ -8,7 +16,7 @@
   width: 25rem;
   height: 25rem;
   background-image: linear-gradient($primary-color, $secondary-color);
-  margin-top: 15rem;
+  // margin-top: 15rem;
   // border: 10px solid linear-gradient(red, lightblue);
   // background: red;
   border-radius: 50%;
@@ -19,5 +27,39 @@
     width: 24rem;
     height: 24rem;
     border: 5px solid white;
+  }
+}
+
+.ceo-info-container {
+  text-align: center;
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .ceo-links {
+    display: flex;
+    justify-content: center;
+    div {
+      margin: 1rem;
+      padding: 0.9rem;
+      border-radius: 50%;
+      font-size: 1.7rem;
+      background-color: #eeedeb;
+    }
+
+    div:hover {
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      transition: 0.25s ease-in-out;
+    }
   }
 }
