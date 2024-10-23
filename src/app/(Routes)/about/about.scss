@@ -3,18 +3,38 @@
 
 .ceo-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 10rem;
-
+  grid-template-columns: repeat(1, 1fr);
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  margin: 5rem 10%;
+  // max-width: 2000px;
+  // margin-top: 5rem;
+  // margin-bottom: 5rem;
+  // align-items: center;
   justify-items: center;
+  @include xxl {
+    gap: 5rem;
+  }
 }
 
 .ceo-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25rem;
-  height: 25rem;
+  @include md {
+    width: 25rem;
+    height: 25rem;
+  }
+  @include xxl {
+    width: 35rem;
+    height: 35rem;
+    // justify-self: end;
+  }
+
+  width: 15rem;
+  height: 15rem;
+
   background-image: linear-gradient($primary-color, $secondary-color);
   // margin-top: 15rem;
   // border: 10px solid linear-gradient(red, lightblue);
@@ -24,24 +44,45 @@
 
   .ceo-image {
     border-radius: 50%;
-    width: 24rem;
-    height: 24rem;
+    @include md {
+      width: 24rem;
+      height: 24rem;
+    }
+    @include xxl {
+      width: 34rem;
+      height: 34rem;
+    }
+    width: 14rem;
+    height: 14rem;
     border: 5px solid white;
   }
 }
 
 .ceo-info-container {
   text-align: center;
+  padding: 1.5rem;
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+    @include md {
+      font-size: 4rem;
+    }
+    margin-bottom: 1rem;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    @include md {
+      font-size: 3rem;
+    }
+    margin-bottom: 1rem;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    @include md {
+      font-size: 2rem;
+    }
+    margin-bottom: 1rem;
   }
 
   .ceo-links {
