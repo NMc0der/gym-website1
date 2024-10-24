@@ -15,6 +15,7 @@
   justify-items: center;
   @include xxl {
     gap: 5rem;
+    margin: 10rem 10%;
   }
 }
 
@@ -101,6 +102,42 @@
       background-color: red;
       color: white;
       transition: 0.25s ease-in-out;
+    }
+  }
+}
+
+.history-gallery-container {
+  display: grid;
+  gap: 1rem;
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  grid-template-columns: repeat(1, 1fr);
+  margin: 5rem 5%;
+  @include xxl {
+    margin: 10rem 10%;
+  }
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  .body-text {
+    padding: 3rem;
+    h2 {
+      @include lg {
+        font-size: 4rem;
+      }
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      @include lg {
+        font-size: 1.7rem;
+      }
+      @include xxl {
+        padding: 0 10%;
+        // font-size: 2rem;
+      }
     }
   }
 }
