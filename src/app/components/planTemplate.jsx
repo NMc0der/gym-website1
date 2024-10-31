@@ -19,7 +19,9 @@ const PlanTemaplate = ({ image, name, price, classes }) => {
             return <p>{gymClass}</p>;
           })}
         </div>
-        <Button />
+        <div className="purchase-btn-container">
+          <Button text={"PURCHASE NOW"} />
+        </div>
       </div>
     </div>
   );
