@@ -32,7 +32,7 @@ const Nav = () => {
         <Link href="/">Schedule</Link>
         <Link href="/">Blog</Link>
         <Link href="/pricing">Pricing</Link>
-        <Link href="/">Classes</Link>
+        <Link href="/gymclasses">Classes</Link>
         <Link href="/contact">Contact</Link>
       </div>
       <div className="nav-icons">
