@@ -1,11 +1,13 @@
 import "./pricing.scss";
 import { bebas_neue } from "@/app/fonts/googleFonts";
 import img1 from "../../assets/alexander-redl-d3bYmnZ0ank-unsplash.jpg";
+import img2 from "../../assets/victor-freitas-KIzBvHNe7hY-unsplash.jpg";
+import img3 from "../../assets/anastase-maragos-7kEpUPB8vNk-unsplash.jpg";
 import PlanTemaplate from "@/app/components/planTemplate";
 
 const Pricing = () => {
   return (
-    <>
+    <div className="pricing-page-container">
       <div className="pricing-text-container">
         <h2 className={`${bebas_neue.className}`}>Pricing Plan</h2>
         <p>
@@ -26,8 +28,33 @@ const Pricing = () => {
             "Cardio",
           ]}
         />
+        <PlanTemaplate
+          image={img2}
+          name={"Intermediate"}
+          price={"60"}
+          classes={[
+            "Free Hand",
+            "Gym Fitness",
+            "Weight Loss",
+            "Yoga",
+            "Cardio",
+          ]}
+        />
+        <PlanTemaplate
+          className="last-grid"
+          image={img3}
+          name={"Advanced"}
+          price={"90"}
+          classes={[
+            "Free Hand",
+            "Gym Fitness",
+            "Weight Loss",
+            "Yoga",
+            "Cardio",
+          ]}
+        />
       </div>
-    </>
+    </div>
   );
 };
 

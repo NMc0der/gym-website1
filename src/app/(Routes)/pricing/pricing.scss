@@ -1,4 +1,12 @@
 @import "../../styles/breakpoint.scss";
+
+.pricing-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .pricing-text-container {
   text-align: center;
   margin: 5rem;
@@ -11,12 +19,27 @@
   }
 }
 
+.pricing-plan-container {
+  margin-bottom: 15rem;
+
+  display: grid;
+
+  gap: 1rem;
+  @include lg {
+    // grid-template-columns: repeat(2, 1fr);
+  }
+  @include xxl {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
 .template-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 5px red solid;
-
+  // border: 5px red solid;
+  box-shadow: 5px 5px 5px 5px grey;
   justify-self: center;
   width: 90%;
 
@@ -24,11 +47,19 @@
     width: 30rem;
     // height: 55rem;
   }
+
+  @include lg {
+    width: 40rem;
+  }
+
+  @include xxl {
+    width: 30rem;
+  }
   // height: 55rem;
   // margin: 1rem;
   .template-info-container {
     background-color: white;
-    border: 1px solid black;
+    // border: 1px solid black;
     // height: 30rem;
     width: 80%;
     transform: translate(0px, -50px);
@@ -48,6 +79,7 @@
 
   .template-price-container {
     display: flex;
+
     justify-content: center;
     // align-items: end;
     .template-dollar-sign {
