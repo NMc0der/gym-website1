@@ -10,12 +10,18 @@
 .pricing-text-container {
   text-align: center;
   margin: 5rem;
-  padding: 0 3rem;
+  @include sm {
+    padding: 0 3rem;
+  }
   h2 {
     font-size: 3rem;
   }
   p {
-    font-size: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    @include sm {
+      font-size: 2rem;
+    }
   }
 }
 

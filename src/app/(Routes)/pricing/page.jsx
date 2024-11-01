@@ -12,7 +12,7 @@ const Pricing = () => {
         <h2 className={`${bebas_neue.className}`}>Pricing Plan</h2>
         <p>
           Sign up today with a fitness plan that works for both your schedule
-          and fitness level.
+          and fitness level!
         </p>
       </div>
       <div className="pricing-plan-container">
