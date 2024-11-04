@@ -1,10 +1,60 @@
+@import "../../styles/global";
+@import "../../styles/breakpoint";
+
 .gym-classes-container {
   display: grid;
   margin: 5rem 2rem;
 }
 
 .gym-class-template {
-  border: 1px solid orange;
-  height: 20rem;
+  position: relative;
+  color: white;
+  // color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  justify-content: end;
+  // border: 1px solid orange;
+  height: 40rem;
   width: 33rem;
+  border-radius: 15px;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: underline $primary-color;
+    text-underline-position: under;
+    text-decoration-thickness: 6px;
+  }
+
+  .teacher-container {
+    margin-right: 0.75rem;
+    // margin-bottom: 1rem;
+  }
+  span {
+    // z-index: 3;
+    font-size: 1.5rem;
+    // margin-bottom: 1rem;
+
+    div {
+      display: inline-block;
+    }
+  }
+  .card-text-container {
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+  }
+}
+
+.background-img-div {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+}
+
+.button-container {
+  margin-top: 2rem;
+  width: 60%;
 }
