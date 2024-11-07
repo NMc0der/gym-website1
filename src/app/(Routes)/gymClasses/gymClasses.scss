@@ -1,9 +1,23 @@
 @import "../../styles/global";
 @import "../../styles/breakpoint";
 
+.classes-page-container {
+  display: flex;
+  justify-content: center;
+}
+
 .gym-classes-container {
   display: grid;
   margin: 5rem 2rem;
+  justify-content: center;
+  justify-items: center;
+  gap: 2rem;
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xxl {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .gym-class-template {
@@ -17,7 +31,7 @@
   justify-content: end;
   // border: 1px solid orange;
   height: 40rem;
-  width: 33rem;
+  width: 29rem;
   border-radius: 15px;
   h2 {
     font-size: 2.5rem;
@@ -56,5 +70,5 @@
 
 .button-container {
   margin-top: 2rem;
-  width: 60%;
+  width: 70%;
 }
