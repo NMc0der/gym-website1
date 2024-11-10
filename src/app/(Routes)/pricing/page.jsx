@@ -1,8 +1,8 @@
 import "./pricing.scss";
 import { bebas_neue } from "@/app/fonts/googleFonts";
-import img1 from "../../assets/alexander-redl-d3bYmnZ0ank-unsplash.jpg";
-import img2 from "../../assets/victor-freitas-KIzBvHNe7hY-unsplash.jpg";
-import img3 from "../../assets/anastase-maragos-7kEpUPB8vNk-unsplash.jpg";
+import img1 from "../../assets/pricing/alexander-redl-d3bYmnZ0ank-unsplash.jpg";
+import img2 from "../../assets/pricing/victor-freitas-KIzBvHNe7hY-unsplash.jpg";
+import img3 from "../../assets/pricing/anastase-maragos-7kEpUPB8vNk-unsplash.jpg";
 import PlanTemaplate from "@/app/components/planTemplate";
 
 const Pricing = () => {
