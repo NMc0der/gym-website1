@@ -17,6 +17,9 @@
 }
 
 .blog-post-container {
+  @include lg {
+    margin-right: 1rem;
+  }
   h2 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -39,11 +42,14 @@
   .blog-view-button {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 30%;
+    width: 40%;
   }
 }
 
 .blog-find-container {
+  @include lg {
+    margin-left: 1rem;
+  }
   .categories-title {
     font-size: 1.75rem;
     font-weight: 600;
@@ -67,4 +73,53 @@
   .categories-drop-down:hover {
     @include hovTrasition();
   }
+}
+
+// blog search bar
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid lightgray;
+  border-right: none;
+  padding: 1rem;
+  height: 4.5rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+  font-size: 1.3rem;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 6rem;
+  height: 4.5rem;
+  border: 1px solid $primary-color;
+  background: $primary-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.blog-search-bar {
+  width: 100%;
+  margin-bottom: 4rem;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 }
