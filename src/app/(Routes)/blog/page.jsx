@@ -6,7 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import RecentBlogPost from "@/app/components/recentBlogPost";
 
 const Blog = () => {
-  const recentPosts = BlogList.slice();
+  const recentPosts = BlogList.slice(0, 6);
 
   return (
     <div className="blog-page-container">
