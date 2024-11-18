@@ -5,6 +5,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 
 const Blog = () => {
+  // const recentPosts = BlogList.slice()
+
   return (
     <div className="blog-page-container">
       <div className="blog-page">
@@ -38,6 +40,9 @@ const Blog = () => {
             </span>
             Yoga
             <span className="blog-count">{"(7)"}</span>
+          </div>
+          <div className="recent-blog-post">
+            <h2 className="recent-blog-post-title">Recent Posts</h2>
           </div>
         </div>
       </div>
