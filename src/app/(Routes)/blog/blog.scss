@@ -124,3 +124,29 @@
   // left: 50%;
   // transform: translate(-50%, -50%);
 }
+
+.recent-blog-post-container {
+  margin-top: 10rem;
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-decoration: underline $primary-color;
+    text-underline-position: under;
+    text-decoration-thickness: 6px;
+  }
+
+  .recent-blog-post {
+    display: flex;
+    .recent-blog-image {
+      width: 10rem;
+    }
+    .recent-blog-info {
+      width: 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // text-align: center;
+    }
+  }
+}

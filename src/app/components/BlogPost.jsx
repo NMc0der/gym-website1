@@ -6,7 +6,7 @@ const BlogPost = (props) => {
   return (
     <div className="blog-post-container">
       <div>
-        <Image src={props.image} />
+        <Image alt={props.title} src={props.image} />
       </div>
       <div className="blog-info-container">
         <span className="author-icon">

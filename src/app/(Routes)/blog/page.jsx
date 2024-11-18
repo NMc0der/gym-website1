@@ -3,9 +3,10 @@ import BlogList from "@/app/data/blogList";
 import BlogPost from "@/app/components/BlogPost";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import RecentBlogPost from "@/app/components/recentBlogPost";
 
 const Blog = () => {
-  // const recentPosts = BlogList.slice()
+  const recentPosts = BlogList.slice();
 
   return (
     <div className="blog-page-container">
@@ -17,9 +18,13 @@ const Blog = () => {
         </div>
         <div className="blog-find-container">
           <div className="blog-search-bar">
-            <div class="search">
-              <input type="text" class="searchTerm" placeholder="Search..." />
-              <button type="submit" class="searchButton">
+            <div className="search">
+              <input
+                type="text"
+                className="searchTerm"
+                placeholder="Search..."
+              />
+              <button type="submit" className="searchButton">
                 <FaSearch />
               </button>
             </div>
@@ -41,8 +46,11 @@ const Blog = () => {
             Yoga
             <span className="blog-count">{"(7)"}</span>
           </div>
-          <div className="recent-blog-post">
+          <div className="recent-blog-post-container">
             <h2 className="recent-blog-post-title">Recent Posts</h2>
+            {recentPosts.map((blog) => {
+              return <RecentBlogPost key={blog.title} {...blog} />;
+            })}
           </div>
         </div>
       </div>
