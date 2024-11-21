@@ -21,6 +21,7 @@
 }
 
 .blog-post-container {
+  padding: 1rem;
   margin-bottom: 5rem;
   @include lg {
     margin-right: 1rem;
@@ -115,6 +116,7 @@
 // blog search bar
 
 .search {
+  padding: 1rem;
   width: 100%;
   position: relative;
   display: flex;
@@ -175,15 +177,19 @@
   .recent-blog-post {
     display: flex;
     margin-bottom: 2rem;
+
     .recent-blog-image {
       width: 15rem;
+      margin-right: 0.5rem;
       @include lg {
         width: 11rem;
       }
     }
     .recent-blog-info {
-      margin-left: 2rem;
+      // margin-left: 1rem;
+
       width: 100%;
+      // text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
