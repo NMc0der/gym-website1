@@ -23,15 +23,25 @@
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xl {
+    grid-template-columns: (repeat(3, 1fr));
+  }
 
   margin-left: auto;
   margin-right: auto;
   justify-items: start;
-  gap: 15px;
+  gap: 2rem;
 }
 
 .gallery-post-img {
-  height: 40rem;
-  width: 40rem;
+  height: 30rem;
+  width: 30rem;
+  // @include md {
+  //   height: 40rem;
+  //   width: 40rem;
+  // }
 }
