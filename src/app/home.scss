@@ -3,12 +3,23 @@
 
 .home-hero-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   //   background-color: black;
   .home-hero-text {
     position: absolute;
     text-align: center;
+    top: 8rem;
+    @include sm {
+      top: 15rem;
+    }
+    @include md {
+      top: 20rem;
+    }
+    @include lg {
+      top: 25rem;
+    }
     @include xxl {
       left: 10rem;
       display: flex;
@@ -63,4 +74,48 @@
   }
   // height: 30rem;
   // height: 100rem;
+}
+
+.home-hero-cards {
+  transform: translateY(-3rem);
+  z-index: 3;
+  display: grid;
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.home-hero-card {
+  background-color: white;
+  box-shadow: 0px 5px 5px 5px grey;
+  margin: 0rem 2rem;
+  margin-bottom: 2rem;
+  // border: 3px solid red;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+
+  .home-hero-progress-icon {
+    font-size: 6em;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.home-hero-card:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
