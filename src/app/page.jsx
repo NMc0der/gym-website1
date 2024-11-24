@@ -2,6 +2,7 @@ import Image from "next/image";
 import heroImg from "./assets/daniel-apodaca-WdoQio6HPVA-unsplash.jpg";
 import "./styles/global.scss";
 import "@/app/home.scss";
+import Button from "./components/button";
 export default function Home() {
   return (
     <div>
@@ -9,7 +10,12 @@ export default function Home() {
         <div className="home-hero-text">
           <h2>MAKE YOUR BODY</h2>
           <h3>FIT & PERFECT</h3>
+          <div className="home-hero-button">
+            <Button text={"OUR CLASSES"} />
+          </div>
+          {/* <div className="home-hero-socials">hiiii</div> */}
         </div>
+
         <Image className="home-hero-img" src={heroImg} />
       </div>
     </div>

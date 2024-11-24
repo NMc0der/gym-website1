@@ -1,3 +1,6 @@
+@import "./styles/global";
+@import "./styles/breakpoint";
+
 .home-hero-section {
   display: flex;
   justify-content: center;
@@ -5,15 +8,59 @@
   //   background-color: black;
   .home-hero-text {
     position: absolute;
+    text-align: center;
+    @include xxl {
+      left: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    // left: 1rem;
+    // top: 13rem;
+
     color: white;
-    background-color: red;
+    // background-color: red;
     z-index: 2;
+    h2 {
+      font-size: 1.75rem;
+      @include sm {
+        font-size: 2rem;
+      }
+      @include md {
+        font-size: 4.5rem;
+        font-weight: 600;
+      }
+    }
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      @include sm {
+        font-size: 1.5;
+      }
+      @include md {
+        font-size: 4rem;
+      }
+    }
   }
+}
+
+.home-hero-button {
+  margin-top: 2rem;
+  @include md {
+    width: 20rem;
+  }
+  width: 18rem;
+
+  // width: 10rem;
 }
 
 .home-hero-img {
   z-index: 1;
   width: 100%;
-
-  //   height: 100rem;
+  filter: brightness(80%);
+  @include xxl {
+    height: 80rem;
+  }
+  // height: 30rem;
+  // height: 100rem;
 }
