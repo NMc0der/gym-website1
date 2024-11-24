@@ -77,18 +77,24 @@
 }
 
 .home-hero-cards {
-  transform: translateY(-3rem);
+  transform: translateY(-5rem);
+  padding: 3rem;
   z-index: 3;
   display: grid;
   @include xl {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    transform: translateY(-6rem);
+  }
+  @include xxl {
+    gap: 3rem;
   }
 }
 
 .home-hero-card {
   background-color: white;
   box-shadow: 0px 5px 5px 5px grey;
-  margin: 0rem 2rem;
+  // margin: 0rem 2rem;
   margin-bottom: 2rem;
   // border: 3px solid red;
   border-radius: 2rem;
@@ -98,18 +104,32 @@
   justify-content: center;
   text-align: center;
   padding: 3rem;
+  @include xxl {
+    width: 30rem;
+  }
 
   .home-hero-progress-icon {
-    font-size: 6em;
+    font-size: 4rem;
+    @include sm {
+      font-size: 6rem;
+    }
     color: $primary-color;
     margin-bottom: 1rem;
   }
   h2 {
-    font-size: 2rem;
+    // font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    @include sm {
+      font-size: 2rem;
+    }
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    // font-size: 1.5rem;
+    @include sm {
+      font-size: 1.5rem;
+    }
     margin-top: 1rem;
   }
 }
