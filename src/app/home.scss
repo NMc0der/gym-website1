@@ -139,3 +139,46 @@
   background-color: black;
   color: white;
 }
+
+// Virtural tour section
+
+.virtual-tour-container {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 6rem;
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.virtual-tour-icons {
+}
+
+.virtual-tour-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+  color: $primary-color;
+  margin-bottom: 3rem;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+.tour-button-container {
+  margin-top: 4rem;
+}
