@@ -9,6 +9,7 @@ import { VscChecklist } from "react-icons/vsc";
 import { GiStrong } from "react-icons/gi";
 import { CgGym } from "react-icons/cg";
 import { IoNutrition } from "react-icons/io5";
+import tourGuide from "./assets/jakob-owens-qkQwDvRqQY8-unsplash.jpg";
 
 export default function Home() {
   return (
@@ -60,35 +61,41 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="virtual-tour-container">
-        <h2>Take a Virtual Tour!</h2>
-        <p>
-          Take a virtual tour with with one of our professional trainers, Rob
-          Daniels. View are various types of equipment, exercieses and meet with
-          some of our trainers.{" "}
-        </p>
-        <div className="virtual-tour-icons">
-          <div className="virtual-tour-icon">
-            <GiStrong />
-            <h3>
-              PROFESSIONAL <br /> TRAINERS
-            </h3>
+        <div className="virtual-tour-text-container">
+          <h2>Take a Virtual Tour!</h2>
+          <p>
+            Take a virtual tour with with one of our professional trainers, Rob
+            Daniels. View are various types of equipment, exercieses and meet
+            with some of our trainers.{" "}
+          </p>
+          <div className="virtual-tour-icons">
+            <div className="virtual-tour-icon">
+              <GiStrong />
+              <h3>
+                PROFESSIONAL <br /> TRAINERS
+              </h3>
+            </div>
+            <div className="virtual-tour-icon virtual-icon-border">
+              <CgGym />
+              <h3>
+                MODERN <br /> EQUIPMENT
+              </h3>
+            </div>
+            <div className="virtual-tour-icon ">
+              <IoNutrition />
+              <h3>
+                DIET <br /> PLANNING
+              </h3>
+            </div>
           </div>
-          <div className="virtual-tour-icon">
-            <CgGym />
-            <h3>
-              MODERN <br /> EQUIPMENT
-            </h3>
-          </div>
-          <div className="virtual-tour-icon">
-            <IoNutrition />
-            <h3>
-              DIET <br /> PLANNING
-            </h3>
+          <div className="tour-button-container">
+            <Button text={"TAKE A TOUR"} />
           </div>
         </div>
-        <div className="tour-button-container">
-          <Button text={"TAKE A TOUR"} />
+        <div className="virtual-tour-image-container">
+          <Image src={tourGuide} />
         </div>
       </div>
     </div>

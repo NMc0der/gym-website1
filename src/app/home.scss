@@ -143,6 +143,22 @@
 // Virtural tour section
 
 .virtual-tour-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 10rem;
+  @include xl2 {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.virtual-tour-text-container {
+  @include xl2 {
+    max-width: 850px;
+  }
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -163,9 +179,17 @@
 }
 
 .virtual-tour-icons {
+  display: grid;
+  @include md {
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .virtual-tour-icon {
+  @include md {
+    padding: 2rem;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +202,25 @@
     color: black;
   }
 }
+.virtual-icon-border {
+  @include md {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+  }
+}
 
 .tour-button-container {
   margin-top: 4rem;
+}
+
+.virtual-tour-image-container {
+  border-top: 20px solid $primary-color;
+  border-right: 20px solid $secondary-color;
+  display: none;
+  @include xl2 {
+    display: block;
+    padding: 2rem;
+    width: 600px;
+    min-width: 600px;
+  }
 }
