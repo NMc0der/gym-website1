@@ -4,12 +4,9 @@ import "./styles/global.scss";
 import "@/app/home.scss";
 import Button from "./components/button";
 
-import { GiStrong } from "react-icons/gi";
-import { CgGym } from "react-icons/cg";
-import { IoNutrition } from "react-icons/io5";
-import tourGuide from "./assets/jakob-owens-qkQwDvRqQY8-unsplash.jpg";
 import HomeHero from "./components/homeSection/homeHero";
 import HeroTour from "./components/homeSection/heroTour";
+import HomeCoach from "./components/homeSection/homeCoach";
 
 export default function Home() {
   return (
@@ -17,6 +14,7 @@ export default function Home() {
       <HomeHero />
 
       <HeroTour />
+      <HomeCoach />
     </div>
   );
 }
