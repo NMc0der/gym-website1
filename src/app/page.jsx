@@ -7,6 +7,7 @@ import Button from "./components/button";
 import HomeHero from "./components/homeSection/homeHero";
 import HeroTour from "./components/homeSection/heroTour";
 import HomeCoach from "./components/homeSection/homeCoach";
+import HomeGymClass from "./components/homeSection/homeGymclass";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
 
       <HeroTour />
       <HomeCoach />
+      <HomeGymClass />
     </div>
   );
 }
