@@ -29,7 +29,7 @@ const Nav = () => {
         <Link href="/">Home</Link>
         <Link href="about">About</Link>
         <Link href="/gallery">Gallery</Link>
-        <Link href="/">Schedule</Link>
+        {/* <Link href="/">Schedule</Link> */}
         <Link href="/blog">Blog</Link>
         <Link href="/pricing">Pricing</Link>
         <Link href="/gymClasses">Classes</Link>
@@ -47,9 +47,9 @@ const Nav = () => {
         <div className="sign-in-icon">
           <IoPersonOutline />
         </div>
-        <div className="sidebar-icon">
+        {/* <div className="sidebar-icon">
           <FiSidebar />
-        </div>
+        </div> */}
         <JoinClassBtn />
       </div>
       <div className={menu ? "nav-menu" : "nav-menu-hidden"}>
@@ -61,29 +61,57 @@ const Nav = () => {
         >
           <IoMdClose />
         </div>
-        <div>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
           <Link href="/">Home</Link>
         </div>
-        <div>
-          <Link href="/">About</Link>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
+          <Link href="about">About</Link>
         </div>
-        <div>
+        {/* <div>
           <Link href="/">Schedule</Link>
+        </div> */}
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
+          <Link href="/gallery">Gallery</Link>
         </div>
-        <div>
-          <Link href="/">Gallery</Link>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
+          <Link href="/blog">Blog</Link>
         </div>
-        <div>
-          <Link href="/">Blog</Link>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
+          <Link href="/contact">Contact</Link>
         </div>
-        <div>
-          <Link href="/">Contact</Link>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
+          <Link href="/pricing">Pricing</Link>
         </div>
-        <div>
-          <Link href="/">Pricing</Link>
-        </div>
-        <div>
-          <Link href="/">Classes</Link>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+        >
+          <Link href="/gymClasses">Classes</Link>
         </div>
       </div>
     </div>

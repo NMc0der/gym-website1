@@ -8,6 +8,7 @@ import HomeHero from "./components/homeSection/homeHero";
 import HeroTour from "./components/homeSection/heroTour";
 import HomeCoach from "./components/homeSection/homeCoach";
 import HomeGymClass from "./components/homeSection/homeGymclass";
+import Pricing from "./(Routes)/pricing/page";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       <HomeHero />
 
       <HeroTour />
-      <HomeCoach />
       <HomeGymClass />
+      <HomeCoach />
+      <Pricing />
     </div>
   );
 }
