@@ -192,11 +192,11 @@ $color-primary: blue;
   align-items: center;
   gap: 1rem;
 
-  div > * {
+  a > * {
     font-size: 2.75rem;
   }
 
-  div > *:hover {
+  a > *:hover {
     @include hovTrasition();
   }
 

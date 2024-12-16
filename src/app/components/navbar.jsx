@@ -44,9 +44,10 @@ const Nav = () => {
         >
           <GiHamburgerMenu />
         </div>
-        <div className="sign-in-icon">
+        <Link className="sign-in-icon" href="/signUp">
           <IoPersonOutline />
-        </div>
+        </Link>
+        {/* <div></div> */}
         {/* <div className="sidebar-icon">
           <FiSidebar />
         </div> */}
