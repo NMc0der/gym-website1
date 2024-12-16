@@ -196,7 +196,15 @@ $color-primary: blue;
     font-size: 2.75rem;
   }
 
+  div > * {
+    font-size: 2.75rem;
+  }
+
   a > *:hover {
+    @include hovTrasition();
+  }
+
+  div > *:hover {
     @include hovTrasition();
   }
 
