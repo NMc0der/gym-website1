@@ -8,7 +8,7 @@ const Coach = ({ coachType, nameText, img }) => {
   return (
     <div className="coach-container">
       <div className="coach-img-container">
-        <Image className="coach-img" src={img} alt="" />
+        <Image className="coach-img" src={img} alt="coach-img" />
       </div>
       <div className="coach-text">
         <h3>{nameText}</h3>

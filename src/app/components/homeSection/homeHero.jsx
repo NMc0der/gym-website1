@@ -19,7 +19,7 @@ const HomeHero = () => {
         {/* <div className="home-hero-socials">hiiii</div> */}
       </div>
 
-      <Image className="home-hero-img" src={heroImg} />
+      <Image alt="hero-img" className="home-hero-img" src={heroImg} />
       <div className="home-hero-cards">
         <div className="home-hero-card">
           <div className="home-hero-progress-icon">

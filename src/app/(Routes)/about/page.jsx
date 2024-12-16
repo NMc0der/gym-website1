@@ -13,7 +13,7 @@ const About = () => {
     <>
       <div className="ceo-container">
         <div className="ceo-image-container">
-          <Image className="ceo-image" src={ceo} />
+          <Image alt="ceo-image" className="ceo-image" src={ceo} />
         </div>
         <div className="ceo-info-container">
           <h2 className={`${bebas_neue.className}`}>Meet The Owner</h2>
@@ -49,10 +49,10 @@ const About = () => {
           </p>
         </div>
         <div className="">
-          <Image src={workoutPic1} />
+          <Image alt="workoutpic1" src={workoutPic1} />
         </div>
         <div className="">
-          <Image src={workoutPic2} />
+          <Image alt="workoutpic2" src={workoutPic2} />
         </div>
         <div className="body-text">
           <h2 className={`${bebas_neue.className}`}>Our Trainers</h2>

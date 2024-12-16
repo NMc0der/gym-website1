@@ -40,7 +40,7 @@ const HeroTour = () => {
         </div>
       </div>
       <div className="virtual-tour-image-container">
-        <Image src={tourGuide} />
+        <Image alt="tour-guide" src={tourGuide} />
       </div>
     </div>
   );
