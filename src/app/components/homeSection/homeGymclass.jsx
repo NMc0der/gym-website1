@@ -2,7 +2,7 @@ import GymClass from "./gymClass";
 import GymClassList from "@/app/data/gymClassList";
 
 const HomeGymClass = () => {
-  const recentClassList = GymClassList.slice(0, 5);
+  const recentClassList = GymClassList.slice(0, 6);
 
   return (
     <div className="home-gym-class-container">
@@ -11,6 +11,7 @@ const HomeGymClass = () => {
         {recentClassList.map((gymClass) => {
           return (
             <GymClass
+              isWide={recentClassList[2] == gymClass}
               key={gymClass.name}
               gymName={gymClass.name}
               gymDay={gymClass.day}
@@ -24,5 +25,7 @@ const HomeGymClass = () => {
     </div>
   );
 };
+
+// || recentClassList[recentClassList.length - 1] == gymClass
 
 export default HomeGymClass;

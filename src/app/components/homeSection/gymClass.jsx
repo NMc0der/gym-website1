@@ -1,6 +1,10 @@
-const GymClass = ({ gymName, gymDay, gymImage, gymTime }) => {
+const GymClass = ({ gymName, gymDay, gymImage, gymTime, isWide }) => {
   return (
-    <div className="home-gym-class">
+    <div
+      className={
+        isWide ? "home-gym-class home-gym-class-extended" : "home-gym-class"
+      }
+    >
       <div
         className="gym-class-image"
         style={{
