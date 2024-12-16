@@ -2,7 +2,7 @@ import GymClass from "./gymClass";
 import GymClassList from "@/app/data/gymClassList";
 
 const HomeGymClass = () => {
-  const recentClassList = GymClassList.slice(0, 6);
+  const recentClassList = GymClassList.slice(1, 9);
 
   return (
     <div className="home-gym-class-container">
@@ -11,7 +11,9 @@ const HomeGymClass = () => {
         {recentClassList.map((gymClass) => {
           return (
             <GymClass
-              isWide={recentClassList[2] == gymClass}
+              isWide={
+                recentClassList[0] == gymClass || recentClassList[5] == gymClass
+              }
               key={gymClass.name}
               gymName={gymClass.name}
               gymDay={gymClass.day}

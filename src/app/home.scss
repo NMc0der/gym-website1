@@ -338,9 +338,19 @@
 .home-gym-classes {
   margin: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include xxl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   // grid-auto-rows: minmax(350px, auto);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .home-gym-class {
@@ -348,8 +358,15 @@
   // padding: 3rem;
   position: relative;
   overflow: hidden;
-  height: 30rem;
-  width: 25rem;
+  // grid-column: span 2;
+
+  height: 25rem;
+  width: 20rem;
+  @include md {
+    height: 30rem;
+    width: 22rem;
+  }
+
   // width: 100%;
   display: flex;
   flex-direction: column;
@@ -384,8 +401,7 @@
 // .home-gym-class-extended {
 //   width: 100%;
 //   grid-template-columns: 2fr;
-//   grid-column-start: 3;
-//   grid-column-end: 5;
+//   grid-column: span 2;
 // }
 
 .gym-class-image {
