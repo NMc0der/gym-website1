@@ -3,13 +3,14 @@ import Coach from "./coach";
 import weights1 from "@/app/assets/coach/samuel-girven-Ppua0I4VjqE-unsplash.jpg";
 import crossfit1 from "@/app/assets/coach/joey-nicotra-du1DgQJvlTg-unsplash.jpg";
 import yoga1 from "@/app/assets/coach/julia-rekamie-Z72YujnOrlY-unsplash.jpg";
+import { fugaz_one, knewave } from "@/app/fonts/googleFonts";
 const HomeCoach = () => {
   return (
     <div className="home-coach-container">
       <div className="home-coach-text">
-        <h2>Team Of Expert Coaches</h2>
+        <h2 className={`${knewave.className}`}>Team Of Expert Coaches</h2>
         <p>
-          View some of our expert coaches and trainers that are willing to do
+          Meet some of our expert coaches and trainers that are willing to do
           whatever it takes to help you reach your fitness goals and plans.
         </p>
       </div>

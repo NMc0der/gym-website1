@@ -6,6 +6,8 @@ import {
   Bebas_Neue,
   Caveat,
   Comfortaa,
+  Fugaz_One,
+  Knewave,
 } from "next/font/google";
 
 export const nunito = Nunito({
@@ -54,4 +56,18 @@ export const comfortaa = Comfortaa({
   weight: "400",
   display: "swap",
   variable: "--comfortaa",
+});
+
+export const fugaz_one = Fugaz_One({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--fugaz",
+});
+
+export const knewave = Knewave({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--knewave",
 });
