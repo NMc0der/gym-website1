@@ -19,12 +19,27 @@ $color-primary: blue;
   color: $color-primary;
 }
 
-.navbar {
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .navbar {
+    // margin-bottom: 20rem;
+    background-color: black;
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   // position: sticky;
   background-color: black;
   color: white;
-  border: black 3px solid;
-  padding: 0px 15px;
+  // border: black 3px solid;
+  // padding: 0px 15px;
   // height: 5rem;
   display: flex;
   align-items: center;
@@ -216,6 +231,7 @@ $color-primary: blue;
   }
 
   .join-btn {
+    margin: 15px;
     display: none;
     font-weight: 600;
     font-size: 1.2rem;
@@ -246,6 +262,8 @@ $color-primary: blue;
 .nav-menu-hidden {
   z-index: -1;
   position: absolute;
+  font-size: 0rem;
+  // position: hidden;
 }
 
 .nav-menu {

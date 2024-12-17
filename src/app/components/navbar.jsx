@@ -23,36 +23,39 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="navbar">
-      <Logo />
-      <div className="navLinks">
-        <Link href="/">Home</Link>
-        <Link href="about">About</Link>
-        <Link href="/gallery">Gallery</Link>
-        {/* <Link href="/">Schedule</Link> */}
-        <Link href="/blog">Blog</Link>
-        <Link href="/pricing">Pricing</Link>
-        <Link href="/gymClasses">Classes</Link>
-        <Link href="/contact">Contact</Link>
-      </div>
-      <div className="nav-icons">
-        <div
-          onClick={() => {
-            setMenu(true);
-          }}
-          className="hamburger-menu"
-        >
-          <GiHamburgerMenu />
+    <div className="navbar-container">
+      <div className="navbar">
+        <Logo />
+        <div className="navLinks">
+          <Link href="/">Home</Link>
+          <Link href="about">About</Link>
+          <Link href="/gallery">Gallery</Link>
+          {/* <Link href="/">Schedule</Link> */}
+          <Link href="/blog">Blog</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/gymClasses">Classes</Link>
+          <Link href="/contact">Contact</Link>
         </div>
-        <Link className="sign-in-icon" href="/signUp">
-          <IoPersonOutline />
-        </Link>
-        {/* <div></div> */}
-        {/* <div className="sidebar-icon">
+        <div className="nav-icons">
+          <div
+            onClick={() => {
+              setMenu(true);
+            }}
+            className="hamburger-menu"
+          >
+            <GiHamburgerMenu />
+          </div>
+          <Link className="sign-in-icon" href="/signUp">
+            <IoPersonOutline />
+          </Link>
+          {/* <div></div> */}
+          {/* <div className="sidebar-icon">
           <FiSidebar />
         </div> */}
-        <JoinClassBtn />
+          <JoinClassBtn />
+        </div>
       </div>
+
       <div className={menu ? "nav-menu" : "nav-menu-hidden"}>
         <div
           onClick={() => {
