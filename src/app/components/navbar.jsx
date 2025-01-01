@@ -52,7 +52,9 @@ const Nav = () => {
           {/* <div className="sidebar-icon">
           <FiSidebar />
         </div> */}
-          <JoinClassBtn />
+          <Link href="/contact">
+            <JoinClassBtn />
+          </Link>
         </div>
       </div>
 

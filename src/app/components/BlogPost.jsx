@@ -1,6 +1,7 @@
 import { RiStackFill } from "react-icons/ri";
 import Image from "next/image";
 import Button from "./button";
+import Link from "next/link";
 
 const BlogPost = (props) => {
   return (
@@ -17,7 +18,9 @@ const BlogPost = (props) => {
       <h2>{props.title}</h2>
       <p>{props.text}</p>
       <div className="blog-view-button">
-        <Button text={"Read Now"} />
+        <Link href="/signUp">
+          <Button text={"Read Now"} />
+        </Link>
       </div>
     </div>
   );

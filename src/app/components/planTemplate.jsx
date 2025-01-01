@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./button";
+import Link from "next/link";
 
 const PlanTemaplate = ({ image, name, price, classes }) => {
   return (
@@ -20,7 +21,9 @@ const PlanTemaplate = ({ image, name, price, classes }) => {
           })}
         </div>
         <div className="purchase-btn-container">
-          <Button text={"PURCHASE NOW"} />
+          <Link href="/signUp">
+            <Button text={"PURCHASE NOW"} />
+          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { IoNutrition } from "react-icons/io5";
 import Button from "../button";
 import Image from "next/image";
 import tourGuide from "@/app/assets/jakob-owens-qkQwDvRqQY8-unsplash.jpg";
+import Link from "next/link";
 
 const HeroTour = () => {
   return (
@@ -36,7 +37,9 @@ const HeroTour = () => {
           </div>
         </div>
         <div className="tour-button-container">
-          <Button text={"TAKE A TOUR"} />
+          <Link href="/signUp">
+            <Button text={"TAKE A TOUR"} />
+          </Link>
         </div>
       </div>
       <div className="virtual-tour-image-container">

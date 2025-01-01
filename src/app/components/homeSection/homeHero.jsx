@@ -2,6 +2,7 @@
 import Button from "../button";
 import heroImg from "@/app/assets/daniel-apodaca-WdoQio6HPVA-unsplash.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 import { IoIosTimer } from "react-icons/io";
 import { GiWeightLiftingUp } from "react-icons/gi";
@@ -14,7 +15,9 @@ const HomeHero = () => {
         <h2>MAKE YOUR BODY</h2>
         <h3>FIT & PERFECT</h3>
         <div className="home-hero-button">
-          <Button text={"OUR CLASSES"} />
+          <Link href="/gymClasses">
+            <Button text={"OUR CLASSES"} />
+          </Link>
         </div>
         {/* <div className="home-hero-socials">hiiii</div> */}
       </div>
