@@ -242,7 +242,7 @@ $color-primary: blue;
     background: -webkit-linear-gradient(
       0deg,
       transparent 50%,
-      $secondary-color 50%
+      $primary-color 50%
     );
     background-size: 400px 80px;
     transition: 0.8s;
@@ -255,6 +255,7 @@ $color-primary: blue;
     background-position: 200px 0px;
 
     color: $primary-color;
+    color: white;
     cursor: pointer;
   }
 }

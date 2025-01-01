@@ -28,7 +28,7 @@ const Footer = () => {
             <FaYoutube />
           </div>
         </div>
-        <p>Privacy Policy | © 2024 Fit Zone</p>
+        <p>Privacy Policy | © 2025 Fit Zone</p>
       </div>
       <div className="footer-classes">
         <h2>Our Classes</h2>
