@@ -8,6 +8,10 @@
 }
 
 .pricing-text-container {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
   text-align: center;
   margin: 5rem;
   @include sm {
@@ -41,6 +45,10 @@
 }
 
 .template-container {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -107,6 +107,10 @@
 }
 
 .history-gallery-container {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
   display: grid;
   gap: 1rem;
   @include lg {

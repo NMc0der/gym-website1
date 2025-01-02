@@ -6,7 +6,7 @@ import Link from "next/link";
 const BlogPost = (props) => {
   return (
     <div className="blog-post-container">
-      <div>
+      <div className="blog-img-container">
         <Image alt={props.title} src={props.image} />
       </div>
       <div className="blog-info-container">
