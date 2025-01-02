@@ -1,8 +1,12 @@
+"use client";
+
 // import Button from "@/components/button";
 import Button from "../button";
 import heroImg from "@/app/assets/daniel-apodaca-WdoQio6HPVA-unsplash.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { motion, useInview, useAnimation } from "framer-motion";
 
 import { IoIosTimer } from "react-icons/io";
 import { GiWeightLiftingUp } from "react-icons/gi";
@@ -63,3 +67,11 @@ const HomeHero = () => {
 };
 
 export default HomeHero;
+
+// variants={{
+//   hidden: { opacity: 0, y: 75 },
+//   visable: { opacity: 1, y: 0 },
+// }}
+// initial="hidden"
+// animate="visable"
+// transition={{ duration: 0.1, delay: 0.25 }}
