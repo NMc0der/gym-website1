@@ -19,10 +19,10 @@ const About = () => {
           <h2 className={`${bebas_neue.className}`}>Meet The Owner</h2>
           <h3 className={`${comfortaa.className}`}>Alexander Smith</h3>
           <p className={`${caveat.className}`}>
-            "I've been involved in fitness and traning all my life and while the
-            Fit Zone team and I are very strong, another form of strength is the
-            strength we can give others! I would like to make as many people
-            into the best versions of themselves as I can."
+            &quot; I&apos;ve been involved in fitness and traning all my life
+            and while the Fit Zone team and I are very strong, another form of
+            strength is the strength we can give others! I would like to make as
+            many people into the best versions of themselves as I can. &quot;
           </p>
           <div className="ceo-links">
             <div>

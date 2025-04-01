@@ -46,8 +46,8 @@ const HomeHero = () => {
 
           <h2>WORKOUT</h2>
           <p>
-            With a variety of workouts to choose from, you'll have everything
-            you need to get into the best shape of your life.
+            With a variety of workouts to choose from, you&apos;ll have
+            everything you need to get into the best shape of your life.
           </p>
         </div>
         <div className="home-hero-card">
