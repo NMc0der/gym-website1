@@ -6,7 +6,7 @@ const PlanTemaplate = ({ image, name, price, classes }) => {
   return (
     <div className="template-container">
       <div className="template-image-container">
-        <Image src={image} />
+        <Image alt={name} src={image} />
       </div>
       <div className="template-info-container">
         <h3 className="template-name">{name}</h3>
@@ -17,7 +17,7 @@ const PlanTemaplate = ({ image, name, price, classes }) => {
         </div>
         <div className="class-names-data">
           {classes.map((gymClass) => {
-            return <p>{gymClass}</p>;
+            return <p key={gymClass}>{gymClass}</p>;
           })}
         </div>
         <div className="purchase-btn-container">

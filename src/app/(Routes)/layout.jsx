@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <div className="pages-hero-section">
         <h2 className={`${fugaz_one.className}`}>{pathTitle}</h2>
         {/* <p>Current pathname: {pathTitle}</p> */}
-        <Image className="hero-img" src={heroImg2} alt="" />
+        <Image className="hero-img" src={heroImg2} alt="workout-image" />
       </div>
       {children}
     </>

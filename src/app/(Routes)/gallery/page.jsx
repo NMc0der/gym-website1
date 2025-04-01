@@ -18,12 +18,13 @@ const Gallery = () => {
       <div className="gallery-container">
         {GalleryList.map((galleryImg) => {
           return (
-            <div key={galleryImg} className="gallery-post">
+            <div key={galleryImg.src} className="gallery-post">
               <Image
                 className="gallery-post-img"
                 alt={galleryImg}
                 src={galleryImg}
               />
+              {console.log(galleryImg.src)}
             </div>
           );
         })}
